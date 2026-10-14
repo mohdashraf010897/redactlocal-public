@@ -20,7 +20,7 @@ This public repository hosts:
 4. **[Terms of Service](TERMS.md)**: Perpetual offline license terms and compliance warranties.
 5. **[Security Policy](SECURITY.md)**: Vulnerability disclosure guidelines.
 
-*The core desktop WebAssembly engine, source code, and automated test corpus are hosted in a private repository.*
+RedactLocal Desktop runs 100% offline on macOS and Windows with zero cloud telemetry.
 
 ---
 

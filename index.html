@@ -395,7 +395,7 @@
       <!-- Quick Action Toolbar -->
       <div class="audit-action-bar">
         <button class="btn-action btn-action-primary" onclick="fixInRedactLocal()">
-          ⚡ Clean & Redact in RedactLocal Studio
+          ⚡ Clean with RedactLocal Desktop
         </button>
         <button class="btn-action btn-action-secondary" onclick="exportAuditCertificate()">
           📜 Download Audit Certificate (JSON)
@@ -427,9 +427,9 @@
           </p>
         </div>
         <div>
-          <a href="../redactlocal-app.html" class="btn-cta">
-            Get RedactLocal for Mac & PC · $49 Lifetime
-          </a>
+          <button type="button" onclick="openWaitlistModal()" class="btn-cta">
+            Get RedactLocal for Mac &amp; PC · $49 Lifetime
+          </button>
         </div>
       </div>
 
@@ -848,24 +848,7 @@
     let currentFileName = null;
 
     function fixInRedactLocal() {
-      if (currentFileBytes) {
-        try {
-          let binary = '';
-          const len = currentFileBytes.byteLength;
-          // Process in chunks to prevent stack overflow on large buffers
-          const chunk = 8192;
-          for (let i = 0; i < len; i += chunk) {
-            const sub = currentFileBytes.subarray(i, Math.min(i + chunk, len));
-            binary += String.fromCharCode.apply(null, sub);
-          }
-          const b64 = btoa(binary);
-          sessionStorage.setItem('redactlocal_import_name', currentFileName || 'document.pdf');
-          sessionStorage.setItem('redactlocal_import_b64', b64);
-        } catch (e) {
-          console.warn("Storage quota exceeded or error:", e);
-        }
-      }
-      window.location.href = '../redactlocal-app.html?src=leakchecker';
+      openWaitlistModal();
     }
 
     function exportAuditCertificate() {
