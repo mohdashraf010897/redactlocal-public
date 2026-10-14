@@ -3,6 +3,8 @@ name: Build Windows Desktop App (MSI & NSIS)
 on:
   workflow_dispatch:
   push:
+    branches:
+      - main
     tags:
       - 'v*'
     paths:
