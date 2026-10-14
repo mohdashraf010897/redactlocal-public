@@ -62,7 +62,7 @@ Download the native, 100% offline desktop application:
 | **macOS (Apple Silicon & Intel)** | Disk Image (`.dmg`) | 7.4 MB | [🍏 **Download RedactLocal.dmg**](https://github.com/mohdashraf010897/redactlocal-public/releases/download/v1.0.0/RedactLocal.dmg) |
 | **macOS (Apple Silicon & Intel)** | Installer (`.pkg`) | 7.0 MB | [📦 **Download RedactLocal-Installer.pkg**](https://github.com/mohdashraf010897/redactlocal-public/releases/download/v1.0.0/RedactLocal-Installer.pkg) |
 | **Web / Air-Gapped Browser** | PWA Web App | Instant | [🌐 **Launch Live Web App**](https://mohdashraf010897.github.io/redactlocal-public/) |
-| **Windows 10 / 11** | Installer (`.msi`) | Packaging | *GitHub Actions automated build in progress* |
+| **Windows 10 / 11** | Installer (`.msi` / `.exe`) | Automated CI | [🪟 **Windows Build Workflow**](https://github.com/mohdashraf010897/redactlocal-public/actions/workflows/build-windows.yml) |
 
 > [!important] **First-time macOS Launch Note (Apple Gatekeeper)**  
 > When opening `RedactLocal.dmg` on macOS Sequoia / Sonoma, macOS may show an alert:  
