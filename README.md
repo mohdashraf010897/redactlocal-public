@@ -24,6 +24,24 @@ RedactLocal Desktop runs 100% offline on macOS and Windows with zero cloud telem
 
 ---
 
+## 📥 Downloads (v1.0.0 Stable)
+
+Download the native, 100% offline desktop application directly:
+
+| Platform | Format | Size | Download Link |
+|---|---|---|---|
+| **macOS (Apple Silicon & Intel)** | Disk Image (`.dmg`) | 7.4 MB | [🍏 **Download RedactLocal.dmg**](https://github.com/mohdashraf010897/redactlocal-public/releases/download/v1.0.0/RedactLocal.dmg) |
+| **macOS (Apple Silicon & Intel)** | Installer (`.pkg`) | 7.0 MB | [📦 **Download RedactLocal-Installer.pkg**](https://github.com/mohdashraf010897/redactlocal-public/releases/download/v1.0.0/RedactLocal-Installer.pkg) |
+| **Web / Air-Gapped Browser** | PWA Web App | Client-side | [🌐 **Launch Web Leak Checker**](https://mohdashraf010897.github.io/redactlocal-public/) |
+| **Windows 10 / 11** | Installer (`.msi`) | Packaging | *GitHub Actions automated build in progress* |
+
+> [!tip] **First-time macOS Launch Note (Gatekeeper)**  
+> Because RedactLocal is an independent open-source utility operating with 100% air-gapped privacy (zero remote tracking):  
+> - **From `.pkg`**: Double-click the installer and follow the prompt to install directly into `/Applications`.  
+> - **From `.dmg`**: Drag `RedactLocal` to `/Applications`. If macOS displays *"cannot be opened because developer cannot be verified"*, open **System Settings → Privacy & Security**, scroll to **Security**, and click **"Open Anyway"** (or run `xattr -cr /Applications/RedactLocal.app`).
+
+---
+
 ## Try the Free Web Leak Checker
 
 You can audit any "redacted" PDF right now in your browser without uploading it to any server:
