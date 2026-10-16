@@ -1,5 +1,10 @@
 # RedactLocal 🛡️
 
+> 📢 **Upstream Repository Notice**: This repository serves as the public release host for GitHub Pages (`mohdashraf010897.github.io/redactlocal-public`) and Microsoft Winget package binaries.  
+> **The canonical open-source monorepo containing full source code (macOS Swift, Wasm engine, test labs, and CONTRIBUTING.md) is located at: [github.com/mohdashraf010897/redactlocal](https://github.com/mohdashraf010897/redactlocal).**
+
+---
+
 > **100% Free, Air-Gapped & Open-Source PDF Surgical Redaction & 7-Oracle Verifier**  
 > Engineered for litigation paralegals, attorneys, CPAs, healthcare clinics, journalists, and privacy advocates.  
 > **100% Free & Open-Source under the MIT License** · Zero Paywall · Zero Subscriptions · Zero Cloud Telemetry.
