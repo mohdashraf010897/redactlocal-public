@@ -2,22 +2,23 @@
 set -e
 
 # RedactLocal 1-Line Zero-Friction macOS Installer
-# Usage: curl -fsSL https://mohdashraf010897.github.io/redactlocal-public/install.sh | bash
+# Usage: curl -fsSL https://raw.githubusercontent.com/mohdashraf010897/redactlocal/main/install.sh | bash
 
 echo "=========================================================="
 echo " 🍏 RedactLocal — 100% Offline PDF Surgical Redaction"
+echo " 100% Free & Open Source · MIT Licensed"
 echo "=========================================================="
 
 if [ "$(uname)" != "Darwin" ]; then
   echo "Error: This automated 1-line installer is for macOS only."
-  echo "For Windows, visit: https://github.com/mohdashraf010897/redactlocal-public"
+  echo "For Windows installers, visit: https://github.com/mohdashraf010897/redactlocal"
   exit 1
 fi
 
 TMP_DIR=$(mktemp -d)
 trap 'rm -rf "${TMP_DIR}"; hdiutil detach /Volumes/RedactLocal 2>/dev/null || true' EXIT
 
-DMG_URL="https://github.com/mohdashraf010897/redactlocal-public/releases/download/v1.0.0/RedactLocal.dmg"
+DMG_URL="https://github.com/mohdashraf010897/redactlocal-public/releases/latest/download/RedactLocal.dmg"
 
 echo "→ [1/4] Downloading latest RedactLocal release..."
 curl -fSL "${DMG_URL}" -o "${TMP_DIR}/RedactLocal.dmg" --progress-bar
